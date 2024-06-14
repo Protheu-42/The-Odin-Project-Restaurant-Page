@@ -1,4 +1,4 @@
-export default function () {
+export default  function homepageLoader() {
     const contentDiv = document.querySelector('#content')
 
     const firstDiv = document.createElement('div');
@@ -13,7 +13,7 @@ export default function () {
     companyIntro.textContent = 'Welcome to Hopster Brews! Crafting unique flavors, pouring passion into every pint. Explore our artisanal ales, savor the taste of handcrafted perfection. Cheers to unforgettable moments and exceptional brews!';
 
     const secondDiv = document.createElement('div');
-    logo.id = 'logo';
+    secondDiv.id = 'logo';
 
     //Appending Child Section
     contentDiv.appendChild(firstDiv);

@@ -1,2 +1,4 @@
-import './style.css'
+import './style.css';
+import homepageLoader from './homepageLoader.js';
 
+homepageLoader()
