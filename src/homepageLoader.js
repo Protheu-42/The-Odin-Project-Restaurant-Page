@@ -1,5 +1,8 @@
 export default  function homepageLoader() {
-    const contentDiv = document.querySelector('#content')
+    const contentDiv = document.querySelector('#content');
+
+    const homepageContainer = document.createElement('div');
+    homepageContainer.id = 'homepage-container';
 
     const firstDiv = document.createElement('div');
 
@@ -16,12 +19,13 @@ export default  function homepageLoader() {
     secondDiv.id = 'logo';
 
     //Appending Child Section
-    contentDiv.appendChild(firstDiv);
+    contentDiv.appendChild(homepageContainer);
+    homepageContainer.appendChild(firstDiv);
     
     //firtDiv Childs
     firstDiv.appendChild(firstH1);
     firstDiv.appendChild(secondH1);
     firstDiv.appendChild(companyIntro);
 
-    contentDiv.appendChild(secondDiv);
+    homepageContainer.appendChild(secondDiv);
 }

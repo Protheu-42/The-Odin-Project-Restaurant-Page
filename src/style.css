@@ -30,6 +30,10 @@ nav {
 }
 
 #content {
+    height: 100%;
+}
+
+#homepage-container {
     display: grid;
     color: white;
     background-color: #312f34;
@@ -42,7 +46,7 @@ nav {
     height: 70%;
     padding-left: 55px;
 }
-#content > div > h1 {
+#homepage-container > div > h1 {
     margin: 0;
     font-size: 4rem;
     color: var(--primary-color);
@@ -50,7 +54,7 @@ nav {
 
 }
 
-#content p {
+#homepage-container p {
     margin-top: 35px;
     width: min(45ch, 100%);
     line-height: 1.5rem;
@@ -63,3 +67,4 @@ nav {
     width: 80%;
     height: 60%;
 }
+
