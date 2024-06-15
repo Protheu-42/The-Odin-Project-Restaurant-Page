@@ -74,9 +74,8 @@ nav {
 /* Contact Page */
 
 #contact-page {
-    height: auto;
-    padding: 35px;
     align-items: normal;
+    align-content: center;
 }
 
 #contact-page textarea {
