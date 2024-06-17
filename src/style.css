@@ -21,6 +21,12 @@ body {
     font-family: 'Roboto-Light', 'sans-serif';
 }
 
+h1, 
+h2,
+h3 {
+    color: var(--primary-color);
+}
+
 nav {
     display: grid;
     grid-auto-flow: column;
@@ -48,7 +54,8 @@ nav :hover {
 }
 
 #homepage-container,
-#contact-page {
+#contact-page,
+#menu-container {
     display: grid;
     color: white;
     background-color: var(--secondary-background-color);
@@ -59,12 +66,11 @@ nav :hover {
     margin: auto;
     align-items: center;
     height: 70%;
-    padding-left: 55px;
+    padding: 55px;
 }
 #homepage-container > div > h1 {
     margin: 0;
     font-size: 4rem;
-    color: var(--primary-color);
     font-family: 'Roboto-Thin', 'sans-serif';
 
 }
@@ -87,11 +93,11 @@ nav :hover {
 
 #contact-page {
     align-items: normal;
-    align-content: center;
+    padding: 35px;
 }
 
 #contact-page textarea {
-    margin-top: 5px;
+    margin-top: 25px;
     margin-bottom: 5px;
     width: 90%;
     height: 100px;
@@ -101,9 +107,7 @@ nav :hover {
 #contact-page h2 {
     margin: 0;
     padding: 0;
-    color: var(--primary-color);
     font-family: 'Roboto-Thin', 'sans-serif';
-
 }
 
 #contact-page h2 {
@@ -132,3 +136,28 @@ nav :hover {
    cursor: grab;
 }
 
+/* Menu Page */
+#menu-container {
+    align-items: normal;
+    grid-auto-flow: row;
+    grid-template-rows: min-content;
+}
+#menu-container h1 {
+    grid-column: span 2;
+    justify-self: center;
+}
+
+#menu-container li {
+    color: var(--primary-color);
+}
+
+#menu-container p {
+    margin: 0;
+    padding-right: 25px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#menu-container .food li {
+    color: white;
+}
